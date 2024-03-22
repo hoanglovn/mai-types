@@ -1,0 +1,43 @@
+{
+  "name": "@dust-tt/types",
+  "version": "0.1.0",
+  "author": "Dust",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/types.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npx dts build",
+    "lint": "dts lint",
+    "format": "dts lint --fix",
+    "start": "dts watch"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/uuid": "^9.0.7",
+    "tslib": "^2.6.2",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.4",
+    "dts-cli": "^2.0.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eventsource-parser": "^1.1.1",
+    "hot-shots": "^10.0.0",
+    "io-ts": "^2.2.20",
+    "redis": "^4.6.8",
+    "uuid": "^9.0.1"
+  },
+  "browser": {
+    "tls": false,
+    "net": false,
+    "hot-shots": false
+  }
+}
